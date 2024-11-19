@@ -1,0 +1,920 @@
+/* DASAR */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* HEADER STYLE */
+
+header {
+    padding: 20px;
+    justify-content: space-between;
+    background-color: bisque;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+.logo {
+    width: 150px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    background-color: brown;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(0.9);
+    background-color: red;
+}
+
+.namaumkm {
+    font-size: 2rem;
+}
+
+/* HERO SECTION */
+
+#hero {
+    padding: 40px;
+    background-color: #d4b4a0;
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-image {
+    width: 900px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: scale(0.9);
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.tombolpesansekarang {
+    padding: 10px;
+    text-decoration: none;
+    background-color: brown;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.hero-text a:hover {
+    background-color: red;
+}
+
+.hero-text a {
+    transition: all 0.3s ease;
+}
+
+
+/* PRODUK SECTION */
+#produk {
+    padding: 20px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#produk h1 {
+    font-size: 2rem;
+}
+
+.produk img {
+    width: 230px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.list-produk {
+    display: flex;
+    width: 900px;
+    gap: 40px;
+}
+
+.produk {
+    background-color: brown;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.produk h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.produk:hover {
+    transform: scale(1.1);
+    background-color: red;
+}
+
+/* TESTIMONI SECTION */
+#testimoni {
+    padding: 20px;
+    background-color: #d4b4a0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#testimoni h1 {
+    font-size: 2rem;
+}
+
+.testi img {
+    width: 230px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.list-testi {
+    display: flex;
+    width: 900px;
+    gap: 120px;
+}
+
+.testi {
+    background-color: brown;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+.testi h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.testi:hover {
+    transform: scale(1.1);
+    background-color: red;
+}
+
+/* KONTAK SECTION */
+#kontak {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: bisque;
+}
+
+#kontak h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+    height: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgb(163, 143, 117);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #333;
+}
+
+input::placeholder {
+    color: black;
+}
+
+textarea::placeholder {
+    color: black;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aqua;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+/* ALAMAT */
+#alamat {
+    padding: 20px;
+    text-align: center;
+    background-color: #d4b4a0;
+}
+
+#alamat h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#alamat a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+#alamat a:hover {
+    color: red;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: bisque;
+    text-align: center;
+    padding: 20px;
+}
+
+.medsos img {
+    width: 30px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.medsos img:hover {
+    transform: scale(1.1);
+}
+
+footer p a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+footer p a:hover {
+    color: red;
+}
+
+.medsos {
+    gap: 20px;
+}
+
+/* MEDIA QUERIES RESPONSIVES */
+
+@media screen and (max-width: 768px) {
+    /* HEADER STYLE */
+
+    header {
+        padding: 20px;
+        justify-content: space-between;
+        background-color: bisque;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        font-size: 0.7  rem;
+    }
+
+    .logo {
+        width: 100px;
+        transition: all 0.3s ease;
+    }
+
+    .logo:hover {
+        transform: scale(1.2);
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    nav ul li {
+        background-color: brown;
+        padding: 5px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    nav ul li:hover {
+        transform: scale(0.9);
+        background-color: red;
+    }
+
+    .namaumkm {
+        display: none;
+    }
+
+    /* HERO SECTION */
+
+    #hero {
+        padding: 20px;
+        background-color: #d4b4a0;
+        display: flex;
+        text-align: right;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero-image {
+        width: 300px;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+    }
+
+    .hero-image:hover {
+        transform: scale(0.9);
+    }
+
+    .hero-text h1 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+        margin-bottom: 50px;
+    }
+
+    .tombolpesansekarang {
+        padding: 10px;
+        text-decoration: none;
+        background-color: brown;
+        border-radius: 5px;
+        color: white;
+    }
+
+
+    /* PRODUK SECTION */
+    #produk {
+        padding: 10px;
+        background-color: bisque;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    #produk h1 {
+        font-size: 1.5rem;
+    }
+
+    .produk img {
+        width: 230px;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .list-produk {
+        display: flex;
+        width: 900px;
+        gap: 40px;
+    }
+
+    .produk {
+        background-color: brown;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        transition: all 0.3s ease;
+    }
+
+    .produk h3 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .produk p {
+        font-size: 0.6rem;
+    }
+
+    .produk:hover {
+        transform: scale(1.1);
+        background-color: red;
+    }
+
+    /* TESTIMONI SECTION */
+    #testimoni {
+        padding: 10px;
+        background-color: #d4b4a0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    #testimoni h1 {
+        font-size: 1.5rem;
+    }
+
+    .testi img {
+        width: 150px;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .list-testi {
+        display: flex;
+        width: 900px;
+        gap: 40px;
+    }
+
+    .testi {
+        background-color: brown;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        transition: all 0.3s ease;
+        width: 250px;
+    }
+
+    .testi h3 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .testi p {
+        font-size: 0.6rem;
+    }
+
+    .testi:hover {
+        transform: scale(1.1);
+        background-color: red;
+    }
+
+    /* KONTAK SECTION */
+    #kontak {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        background-color: bisque;
+    }
+
+    #kontak h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    form input,
+    form textarea {
+        display: block;
+        margin: 0 auto;
+        width: 500px;
+        height: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: rgb(163, 143, 117);
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        border: 1px solid #333;
+    }
+
+    input::placeholder {
+        color: black;
+    }
+
+    textarea::placeholder {
+        color: black;
+    }
+
+    button {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: aqua;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        background-color: red;
+        color: white;
+    }
+
+    /* ALAMAT */
+    #alamat {
+        padding: 20px;
+        text-align: center;
+        background-color: #d4b4a0;
+    }
+
+    #alamat h1 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    #alamat a {
+        text-decoration: none;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        color: #333;
+    }
+
+    #alamat a:hover {
+        color: red;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* HEADER STYLE */
+
+    header {
+        padding: 10px;
+        justify-content: space-between;
+        background-color: bisque;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 50px;
+        margin-right: 50px;
+    }
+
+    .logo {
+        width: 200px;
+        transition: all 0.3s ease;
+        margin: auto;
+    }
+
+    .logo:hover {
+        transform: scale(1.2);
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li {
+        background-color: brown;
+        padding: 10px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    nav ul li:hover {
+        transform: scale(0.9);
+        background-color: red;
+    }
+
+    .namaumkm {
+        font-size: 2rem;
+        display: none;
+    }
+
+    /* HERO SECTION */
+
+    #hero {
+        padding: 20px;
+        background-color: #d4b4a0;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-image {
+        width: 500px;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        margin: auto;
+    }
+
+    .tombolpesansekarang {
+        padding: 10px;
+        text-decoration: none;
+        background-color: brown;
+        border-radius: 5px;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    .hero-image:hover {
+        transform: scale(0.9);
+    }
+
+    .hero-text h1,p{
+        display: none;
+    }
+
+    /* PRODUK SECTION */
+    #produk {
+        padding: 20px;
+        background-color: bisque;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+
+    #produk h1 {
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+
+    .produk img {
+        width: 200px;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .list-produk {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .produk {
+        background-color: brown;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        transition: all 0.3s ease;
+        margin: auto;
+        width: 300px;
+        display: block;
+        text-align: center;
+    }
+
+    .produk p {
+        font-size: 0.9rem;
+        display: block;
+    }
+
+    .produk h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .produk:hover {
+        transform: scale(0.9);
+        background-color: red;
+    }
+
+    /* TESTIMONI SECTION */
+    #testimoni {
+        padding: 20px;
+        background-color: #d4b4a0;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+
+    #testimoni h1 {
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+
+    .testi img {
+        width: 200px;
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .list-testi {
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        gap: 10px;
+    }
+
+    .testi {
+        background-color: brown;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        transition: all 0.3s ease;
+        margin: auto;
+        width: 300px;
+        display: block;
+    }
+
+    .testi p {
+        font-size: 0.9rem;
+        display: block;
+    }
+
+    .testi h3 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .testi:hover {
+        transform: scale(0.9);
+        background-color: red;
+    }
+
+    /* KONTAK SECTION */
+    #kontak {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        background-color: bisque;
+    }
+
+    #kontak h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    form input,
+    form textarea {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        height: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: rgb(163, 143, 117);
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        border: 1px solid #333;
+    }
+
+    input::placeholder {
+        color: black;
+    }
+
+    textarea::placeholder {
+        color: black;
+    }
+
+    button {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: aqua;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        background-color: red;
+        color: white;
+    }
+
+    /* ALAMAT */
+    #alamat {
+        padding: 20px;
+        text-align: center;
+        background-color: #d4b4a0;
+    }
+
+    #alamat h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    #alamat a {
+        text-decoration: none;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        color: #333;
+    }
+
+    #alamat a:hover {
+        color: red;
+    }
+
+    /* FOOTER */
+
+    footer {
+        background-color: bisque;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .medsos img {
+        width: 30px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+
+    .medsos {
+        gap: 20px;
+    }
+
+    footer p{
+        display: contents;
+    }
+}
+
+@media screen and (width: 1024px){
+    .namaumkm {
+        display: none;
+    }
+
+    .hero-image {
+        width: 600px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-text p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (width: 320px) {
+    .produk {
+        width: 200px;
+    }
+
+    .testi {
+        width: 200px;
+    }
+
+    form input,
+    form textarea {
+        width: 200px;
+    }
+
+    footer p {
+        font-size: 0.6rem;
+    }
+}
